@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
+import {Route, Switch, Link, withRouter} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        <img src="./assets/images/aveen.jpg" className="App-logo" alt="logo" />
-          <p>
-            Site in Construction...Check back soon.
-          </p>
-          <a
-            className="App-link"
-            href="https://www.linkedin.com/in/aveenpattni/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See my LinkedIn
-          </a>
-        </header>
+      <div className="app">
+        <Route path="/" exact render={(props) => {return <Navbar {...props}/> }} />
+        <Route path="/:page" render={(props) => {return <Navbar {...props}/> }} />
+        <Switch>
+          <Route path="/" exact render={() => {return <Home/> }} />
+        </Switch>
       </div>
     );
   }

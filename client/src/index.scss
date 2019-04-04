@@ -13,4 +13,26 @@ code {
     monospace;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+$mobileWidth: 320px;
+$tabletWidth: 768px;
+$desktopWidth: 1024px;
+$mobilePad: 16px;
+$tabletPad: 24px;
+$desktopPad: 12.5%;
+
+$navbarBack: rgb(100, 0, 0);
+$blackBack: #333;
+$textWhite: #FAFAFA;
+
+
 @import "./App.scss";
