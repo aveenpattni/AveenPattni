@@ -1,14 +1,28 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Menu from './Menu';
 
 export default class Navbar extends Component {
+  state={
+    menu: false
+  }
+  toggleMenu = (e) => {
+    e.preventDefault();
+    this.setState({
+      menu: !this.state.menu
+    })
+  }
   render() {
     return (
       <nav className="navbar">
-        <Link to="/">
+        <div className="navbar__menu">
+          <img onClick={this.toggleMenu} src="./assets/icons/menu.svg" alt="Menu" />
+        </div>
+        {this.state.menu ? <Menu toggle={this.toggleMenu}/> : <></>}
+        <Link to="/" className="navbar__a">
           <div className="navbar__home">
-            <h1>Aveen Pattni</h1>
             <img src="./assets/images/aveen.jpg" alt="Aveen" />
+            <h1>Aveen Pattni</h1>
           </div>
         </Link>
         <div className="navbar__tabs">
