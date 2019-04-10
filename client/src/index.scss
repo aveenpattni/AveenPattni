@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(196, 216, 247);
 }
 
 code {
@@ -31,10 +32,128 @@ $tabletPad: 24px;
 $desktopPad: 12.5%;
 
 $primary: #044ea1;
-$light: #9FB8DE;
+$light: rgb(196, 216, 247);
 $dark: #21386E;
-$blackBack: #333;
+$backBlack: #626262;
+$backWhite: #F0F0F0;
 $textWhite: #FAFAFA;
+$textBlack: #1A1A1A;
 
+//Mobile Text Styles
+@mixin mobileHeader() {
+  font-size: 32px;
+  line-height: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+@mixin mobileHeaderSmall() {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+@mixin mobileSubheader() {
+  font-size: 20px;
+  line-height: 22px;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+@mixin mobileParagraph() {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal; 
+  color: $textBlack;
+  text-indent: 1rem;
+}
+@mixin mobileList() {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal; 
+}
+@mixin mobileLabel() {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+//Desktop & Tablet Text Styles
+@mixin dtHeroHeader() {
+  font-size: 60px;
+  line-height: 68px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+}
+@mixin dtHeader() {
+  font-size: 36px;
+  line-height: 44px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+@mixin dtHeaderSmall() {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+@mixin dtSubheader() {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+@mixin dtParagraph() {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal; 
+  color: $textBlack;
+}
+@mixin dtList() {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal 
+}
+@mixin dtLabel() {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal 
+}
+
+//Keyframes for animations
+@keyframes heroLanding{
+  0% {
+    left: -30rem;
+  }
+  65%{
+    left: 3.5rem;
+  }
+  90%{
+    left: -1rem;
+  }
+  100%{
+    left: 0;
+  }
+}
+@keyframes heroSubLanding{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes heroBackLanding{
+  0% {
+    background: none;
+  }
+  100%{
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
 
 @import "./App.scss";

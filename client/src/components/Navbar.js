@@ -32,8 +32,8 @@ export default class Navbar extends Component {
           <div className={this.props.match.params.page === "experience" ? "navbar__tab navbar__tab--selected" : "navbar__tab"}>
             <Link to="/experience"><h4>Experience</h4></Link>
           </div>
-          <div className={this.props.match.params.page === "extracurricular" ? "navbar__tab navbar__tab--selected" : "navbar__tab"}>
-            <Link to="/extracurricular"><h4>Extracurricular</h4></Link>
+          <div className={this.props.match.params.page === "hobbies" ? "navbar__tab navbar__tab--selected" : "navbar__tab"}>
+            <Link to="/hobbies"><h4>Hobbies</h4></Link>
           </div>
           <div className={this.props.match.params.page === "contact" ? "navbar__tab navbar__tab--selected" : "navbar__tab"}>
             <Link to="/contact"><h4>Contact</h4></Link>
