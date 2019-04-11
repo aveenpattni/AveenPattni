@@ -296,16 +296,94 @@
   }
 }
 .projects{
-  padding-top: 100px;
+  width: 100%;
+  padding: 116px $mobilePad $mobilePad $mobilePad;
+  min-height: 100vh;
+  h2{
+    @include mobileHeader();
+    text-align: center;
+  }
+  @media (min-width: $tabletWidth) {
+    padding: 116px $tabletPad $tabletPad $tabletPad;
+  }
+  @media (min-width: $desktopWidth) {
+    padding: 116px $desktopPad $desktopPad $desktopPad;
+  }
+}
+.projectCard{
+  width: 100%;
+  border: 2px solid $dark;
+  border-radius: 4px;
+
+  background: $backWhite;
+  margin: 1rem 0;
+  h1{
+    text-align: center;
+    @include mobileHeaderSmall();
+    padding-bottom: 0.5rem;
+  }
+  &__imgContainer{
+  }
+  &--caption{
+    padding: 0.5rem;
+    h4{
+      @include mobileSubheader();
+      padding-bottom: 1px;
+      border-bottom: 1px solid black;
+    }
+    p{
+      @include mobileParagraph();
+    }
+  }
+  @media (min-width: $tabletWidth) {
+    
+  }
+  @media (min-width: $desktopWidth) {
+    
+  }
+}
+.carousel{
+  display: none;
+}
+.carousel-slider{
+  display:block;
+  img{
+    max-height: 15rem;
+    object-fit: contain;
+  }
 }
 .experience{
-  padding-top: 100px;
+  width: 100%;
+  padding: 116px $mobilePad $mobilePad $mobilePad;
+  min-height: 100vh;
+  @media (min-width: $tabletWidth) {
+    padding: 116px $tabletPad $tabletPad $tabletPad;
+  }
+  @media (min-width: $desktopWidth) {
+    padding: 116px $desktopPad $desktopPad $desktopPad;
+  }
 }
 .hobbies{
-  padding-top: 100px;
+  width: 100%;
+  padding: 116px $mobilePad $mobilePad $mobilePad;
+  min-height: 100vh;
+  @media (min-width: $tabletWidth) {
+    padding: 116px $tabletPad $tabletPad $tabletPad;
+  }
+  @media (min-width: $desktopWidth) {
+    padding: 116px $desktopPad $desktopPad $desktopPad;
+  }
 }
 .contact{
-  padding-top: 100px;
+  width: 100%;
+  padding: 116px $mobilePad $mobilePad $mobilePad;
+  min-height: 100vh;
+  @media (min-width: $tabletWidth) {
+    padding: 116px $tabletPad $tabletPad $tabletPad;
+  }
+  @media (min-width: $desktopWidth) {
+    padding: 116px $desktopPad $desktopPad $desktopPad;
+  }
 }
 .footer{
   background: $backBlack;
