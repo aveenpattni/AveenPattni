@@ -4,7 +4,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-//app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "client/build")));
+//app.use(express.static('client'));
 
 app.listen(PORT,() => {
   console.log(`Listening on Port: ${PORT}`);

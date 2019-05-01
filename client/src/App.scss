@@ -169,14 +169,6 @@
     display: none;
   }
 }
-@keyframes moveInTop {
-  0%{
-    transform: translateY(-200%);
-  }
-  100%{
-    transform: translateX(0);
-  }
-}
 .home{
   padding-top: 100px;
   &__hero{
@@ -194,7 +186,6 @@
   &__herotext{
     margin: 1rem;
     padding-bottom: 1rem;
-    // background: rgba(255, 255, 255, 0.3);
     animation-name: heroBackLanding;
     animation-delay: 1s;
     animation-duration: 1s;
@@ -297,32 +288,60 @@
 }
 .projects{
   width: 100%;
-  padding: 116px $mobilePad $mobilePad $mobilePad;
+  padding-top: 100px;
   min-height: 100vh;
-  h2{
-    @include mobileHeader();
-    text-align: center;
+  &__hero{
+    position: relative;
+    height: 15rem;
+    img{
+      z-index: -1;
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(1.5px);
+    }
+    h2{
+      @include mobileHeader();
+      text-align: center;
+      position: relative;
+      padding: 1rem 1.75rem;
+      animation: projectHeroLanding 1s ease-in-out forwards;
+    }
+  }
+  &__cards{
+    padding: 0 $mobilePad $mobilePad $mobilePad;
   }
   @media (min-width: $tabletWidth) {
-    padding: 116px $tabletPad $tabletPad $tabletPad;
+    &__cards{
+      padding: 0 $tabletPad $tabletPad $tabletPad;
+    }
+    &__hero{
+      height: 25rem;
+      h2{
+        @include dtHeroHeader();
+      }
+    }
   }
   @media (min-width: $desktopWidth) {
-    padding: 116px $desktopPad $desktopPad $desktopPad;
+    &__hero{
+      height: 30rem;
+    }
+    &__cards{
+      padding: 0 $desktopPad $tabletPad $desktopPad;
+    }
   }
 }
 .projectCard{
   width: 100%;
   border: 2px solid $dark;
   border-radius: 4px;
-
   background: $backWhite;
   margin: 1rem 0;
   h1{
     text-align: center;
     @include mobileHeaderSmall();
     padding-bottom: 0.5rem;
-  }
-  &__imgContainer{
   }
   &--caption{
     padding: 0.5rem;
@@ -335,43 +354,110 @@
       @include mobileParagraph();
     }
   }
+  .carousel{
+    display: none;
+  }
+  .carousel-slider{
+    display:block;
+    img{
+      max-height: 15rem;
+      object-fit: contain;
+    }
+  }
   @media (min-width: $tabletWidth) {
-    
+    margin: 2.5rem 0;
+    .carousel-slider{
+      img{
+        max-height: 25rem;
+        object-fit: contain;
+      }
+    }
   }
   @media (min-width: $desktopWidth) {
     
   }
 }
-.carousel{
-  display: none;
-}
-.carousel-slider{
-  display:block;
-  img{
-    max-height: 15rem;
-    object-fit: contain;
-  }
-}
-.experience{
-  width: 100%;
-  padding: 116px $mobilePad $mobilePad $mobilePad;
-  min-height: 100vh;
-  @media (min-width: $tabletWidth) {
-    padding: 116px $tabletPad $tabletPad $tabletPad;
-  }
-  @media (min-width: $desktopWidth) {
-    padding: 116px $desktopPad $desktopPad $desktopPad;
-  }
-}
+
 .hobbies{
   width: 100%;
-  padding: 116px $mobilePad $mobilePad $mobilePad;
+  padding-top: 100px;
   min-height: 100vh;
+  &__hero{
+    position: relative;
+    height: 15rem;
+    img{
+      z-index: -1;
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(1px);
+    }
+    h2{
+      @include mobileHeader();
+      text-align: center;
+      position: relative;
+      padding: 1rem 1.75rem;
+      animation: projectHeroLanding 1s ease-in-out forwards;
+    }
+  }
+  &__main{
+    padding: 0 $mobilePad $mobilePad $mobilePad;
+  }
+  h3{
+    @include mobileHeaderSmall();
+  }
+  &__card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &--text{
+      p{
+        text-align: center;
+      }
+    }
+    &--picture{
+      height: 10rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
   @media (min-width: $tabletWidth) {
-    padding: 116px $tabletPad $tabletPad $tabletPad;
+    &__hero{
+      height: 25rem;
+      h2{
+        @include dtHeroHeader();
+      }
+    }
+    &__main{
+      padding: 0 $tabletPad $tabletPad $tabletPad;
+    }
+    h3{
+      @include dtHeader();
+    }
+    &__card{
+      flex-direction: row;
+      justify-content: space-between;
+      &--text{
+
+      }
+      &--picture{
+        width: 60%;
+        height: 15rem;
+      }
+    }
   }
   @media (min-width: $desktopWidth) {
-    padding: 116px $desktopPad $desktopPad $desktopPad;
+    &__hero{
+      height: 30rem;
+    }
+    &__main{
+      padding: 0 $desktopPad $tabletPad $desktopPad;
+    }
   }
 }
 .contact{
@@ -382,7 +468,7 @@
     padding: 116px $tabletPad $tabletPad $tabletPad;
   }
   @media (min-width: $desktopWidth) {
-    padding: 116px $desktopPad $desktopPad $desktopPad;
+    padding: 116px $desktopPad $tabletPad $desktopPad;
   }
 }
 .footer{

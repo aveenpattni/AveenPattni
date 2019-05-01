@@ -139,6 +139,14 @@ $textBlack: #1A1A1A;
     left: 0;
   }
 }
+@keyframes projectHeroLanding{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 @keyframes heroSubLanding{
   0% {
     opacity: 0;
@@ -153,6 +161,14 @@ $textBlack: #1A1A1A;
   }
   100%{
     background: rgba(255, 255, 255, 0.3);
+  }
+}
+@keyframes moveInTop {
+  0%{
+    transform: translateY(-200%);
+  }
+  100%{
+    transform: translateX(0);
   }
 }
 

@@ -23,17 +23,19 @@ export default class ProjectCard extends Component {
             </div>
           </Carousel>
         </div>
-        <div className="projectCard__stack projectCard--caption">
-          <h4>Tech Stack:</h4>
-          <p>{this.props.proj.stack}</p>
-        </div>
-        <div className="projectCard__high projectCard--caption">
-          <h4>Highlights:</h4>
-          <p>{this.props.proj.highlights}</p>
-        </div>
-        <div className="projectCard__description projectCard--caption">
-          <h4>Description:</h4>
-          <p>{this.props.proj.description}</p>
+        <div className="projectCard__info">
+          <div className="projectCard__stack projectCard--caption">
+            <h4>Tech Stack:</h4>
+            <p>{this.props.proj.stack}</p>
+          </div>
+          <div className="projectCard__high projectCard--caption">
+            <h4>Highlights:</h4>
+            <p>{this.props.proj.highlights}</p>
+          </div>
+          <div className="projectCard__description projectCard--caption">
+            <h4>Description:</h4>
+            <p>{this.props.proj.description}</p>
+          </div>
         </div>
       </div>
     )
