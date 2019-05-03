@@ -10,15 +10,15 @@ export default class ProjectCard extends Component {
         <div className="projectCard__imgContainer">
           <Carousel>
             <div>
-              <img src={this.props.proj.image1} />
+              <img src={this.props.proj.image1} alt="Project 1"/>
               <p className="legend">{this.props.proj.caption1}</p>
             </div>
             <div>
-              <img src={this.props.proj.image2} />
+              <img src={this.props.proj.image2}  alt="Project 2"/>
               <p className="legend">{this.props.proj.caption2}</p>
             </div>
             <div>
-              <img src={this.props.proj.image3} />
+              <img src={this.props.proj.image3}  alt="Project 3"/>
               <p className="legend">{this.props.proj.caption3}</p>
             </div>
           </Carousel>

@@ -5,7 +5,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         <section className="home__hero">
-          <img src="./assets/images/homeHero.jpeg" alt="Hero Image" />
+          <img src="./assets/images/homeHero.jpeg" alt="Hero" />
           <div className="home__herotext">
             <h1>Aveen Pattni</h1>
             <ul>
