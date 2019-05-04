@@ -20,7 +20,7 @@ export default [
     image3: "./assets/images/trivia3.png",
     caption3: "Score Page",
     stack: "React",
-    description: "Retrieves questions from an API and presents them interactively to the player. Players have up to 60 seconds to answer 10 questions of various difficulties on one of 24 categories",
+    description: "Retrieves questions from an API and presents them interactively to the player. Players have up to 60 seconds to answer 10 questions of various difficulties on one of 24 categories.",
     highlights: "API Use, Timer functionality"
   }
 ]

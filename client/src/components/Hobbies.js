@@ -41,7 +41,7 @@ export default class Hobbies extends Component {
           <div className="hobbies__card">
             <div className="hobbies__card--text">
               <p>Personal fitness has become increasingly important to me as I have gotten older. Taking 
-                care of my body and my health is something which I beleive will benefit me more later on 
+                care of my body and my health is something which I believe will benefit me later on 
                 in life than it will now. Staying in great physical shape now is also something that is 
                 important to me. This includes staying active through working out and playing sports, as 
                 well as maintaining a healthy diet.

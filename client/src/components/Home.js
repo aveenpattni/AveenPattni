@@ -20,10 +20,10 @@ export default class Home extends Component {
           <div className="home__infoBlock">
             <div className="home__story">
               <p>
-                I am 23 years old, born and raised in Mississauga, ON. I am a dynamic and detail oriented full stack web developer motivated to create a positive impact in the world of digital consulting/development. Armed with various experience in information technology and digital transformation, I am talented in creating detail-focused, user-friendly solutions to solve modern problems.
+                I am 23 years old, born and raised in Mississauga, ON. I am a dynamic and detail-oriented full stack web developer motivated to create a positive impact in the world of digital consulting/development. Armed with various experience in information technology and digital transformation, I am talented in creating detail-focused, user-friendly solutions to solve modern problems.
               </p>
               <p>
-                I possess a Bachelor of Mathematics from the University of Waterloo majoring in Information Technology Management. This program combines the fields of Mathematics, Business, and Technology to bridge the gap between management and technology. After completing my undergraduate degree, I entered the working world in digital transformation as an IT Analyst. This exposed me to web development which then I pursued as a career as it allows me to utilize my problem solving skills while working in an
+                I possess a Bachelor of Mathematics from the University of Waterloo majoring in Information Technology Management. This program combines the fields of Mathematics, Business, and Technology to bridge the gap between management and technology. After completing my undergraduate degree, I entered the working world in digital transformation as an IT Analyst. This exposed me to web development which then I pursued as a career as it allows me to utilize my problem-solving skills while working in an
   environment where I am continuously learning and challenging myself. Most recently I obtained a diploma in Full Stack Web Development from BrainStation school for digital skill training.
               </p>
               <p>
