@@ -5,11 +5,8 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 console.log(process.env);
 
-app.use(express.static('client'));
-
-app.get('/joke', (req, res) => {
-  res.send("<h1>How many apples grow on a tree?</h1><h2>All of them.</h2>");
-})
+//app.use(express.static('client'));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.listen(PORT,() => {
   console.log(`Listening on Port: ${PORT}`);
