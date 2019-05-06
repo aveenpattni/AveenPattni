@@ -23,7 +23,7 @@ export default class Contact extends Component {
               <a href="mailto: aveenpattni@gmail.com"><img src="./assets/images/email.png" alt="Email" /></a>
             </div>
             <div className="contact__card">
-              <a href="./assets/AveenPattni.pdf" download><img src="./assets/images/resume.png" alt="Resume" /></a>
+              <a href="https://drive.google.com/file/d/1N-BylEt-QbOB1REaKe7ja_XDecyeKZBv/view?usp=sharingf" target="__blank"><img src="./assets/images/resume.png" alt="Resume" /></a>
             </div>
           </div>
         </section>
