@@ -5,7 +5,7 @@ export default class Contact extends Component {
     return (
       <div className="contact">
         <section className="contact__hero">
-          <img src="./assets/images/hobby.jpeg" alt="Hero" />
+          <img src="./assets/images/contact.jpeg" alt="Hero" />
           <div className="contact__herotext">
             <h2>Contact Aveen</h2>
           </div>

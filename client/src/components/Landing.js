@@ -51,8 +51,19 @@ export default class Landing extends Component {
           <Link to="/projects"><button>See More...</button></Link>
         </section>
         <section className="landing__hobbies" id="hobbies">
+          <h3>Hobbies</h3>
           <div className="landing__hobbiesContainer">
-
+            <div className="landing__hobbies--text">
+              <p>I have been involved with educational competitive robotics programs since 2010. I 
+                started out as a competitor when I was in high school for the FIRST and VEX Robotics 
+                programs. After finishing high school, I stayed involved as a mentor for FIRST Robotics
+                and a global key volunteer for VEX Robotics as a head referee. I stay involved as a 
+                volunteer because I want to help make an incredible educational experience for the students.
+              </p>
+            </div>
+            <div className="landing__hobbies--images">
+              <img src="./assets/images/robotics.jpg" alt="Robotics" />
+            </div>
           </div>
           <Link to="/hobbies"><button>See More...</button></Link>
         </section>
