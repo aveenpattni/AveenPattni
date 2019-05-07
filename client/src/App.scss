@@ -344,6 +344,11 @@
       h3{
         @include dtHeader();
       }
+      button{
+        @include dtLabel();
+        width: 7rem;
+        height: 3rem;
+      }
       &--text{
         width: auto;
         max-width: 500px;
@@ -361,6 +366,11 @@
       }
       .projectCard{
         margin: 1rem 0;
+      }
+      button{
+        @include dtLabel();
+        width: 7rem;
+        height: 3rem;
       }
     }
     &__hobbiesContainer{
@@ -380,6 +390,11 @@
       }
       &--images{
         width: auto;
+      }
+      button{
+        @include dtLabel();
+        width: 7rem;
+        height: 3rem;
       }
     }
   }
