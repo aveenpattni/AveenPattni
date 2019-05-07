@@ -9,18 +9,16 @@ export default class ProjectCard extends Component {
         <h1>{this.props.proj.title}</h1>
         <div className="projectCard__imgContainer">
           <Carousel>
-            <div>
-              <img src={this.props.proj.image1} alt="Project 1"/>
-              <p className="legend">{this.props.proj.caption1}</p>
-            </div>
-            <div>
-              <img src={this.props.proj.image2}  alt="Project 2"/>
-              <p className="legend">{this.props.proj.caption2}</p>
-            </div>
-            <div>
-              <img src={this.props.proj.image3}  alt="Project 3"/>
-              <p className="legend">{this.props.proj.caption3}</p>
-            </div>
+            {
+              this.props.proj.images.map(i => {
+                return (
+                  <div>
+                    <img src={i.image} alt={this.props.proj.title} />
+                    <p className="legend">{i.caption}</p>
+                  </div>
+                )
+              })
+            }
           </Carousel>
         </div>
         <div className="projectCard__info">
@@ -35,6 +33,10 @@ export default class ProjectCard extends Component {
           <div className="projectCard__description projectCard--caption">
             <h4>Description:</h4>
             <p>{this.props.proj.description}</p>
+          </div>
+          <div className="projectCard__description projectCard--caption">
+            <h4>Link:</h4>
+            <a href={this.props.proj.link} target="__blank"><p>{this.props.proj.linkTitle}</p></a>
           </div>
         </div>
       </div>
