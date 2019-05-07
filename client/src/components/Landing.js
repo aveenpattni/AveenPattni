@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import ProjectCard from './ProjectCard';
+import data from '../data/Projects';
+
 
 export default class Landing extends Component {
 
@@ -27,6 +30,7 @@ export default class Landing extends Component {
           <a href="#hobbies"><button>My Hobbies</button></a>
         </section>
         <section className="landing__about" id="about">
+          <h3>About Me</h3>
           <div className="landing__aboutContainer">
             <div className="landing__about--text">
               <p>
@@ -40,8 +44,9 @@ export default class Landing extends Component {
           <Link to="/about"><button>See More...</button></Link>
         </section>
         <section className="landing__projects" id="projects">
+          <h3>Projects</h3>
           <div className="landing__projectsContainer">
-            
+            <ProjectCard id={data[0].title} proj={data[0]} />
           </div>
           <Link to="/projects"><button>See More...</button></Link>
         </section>

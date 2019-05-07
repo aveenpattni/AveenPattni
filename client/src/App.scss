@@ -242,18 +242,43 @@
     width: 100%;
     background: $backWhite;
     padding: 1rem;
+    h3{
+      @include mobileHeaderSmall();
+      margin-bottom: 0.5rem;
+    }
+    &--text{
+      @include mobileParagraph();
+    }
     &--images{
       width: 100%;
       padding: 0.5rem 0;
+      text-align: center;
       img{
         border: 1px solid black;
         width: 100%;
+        max-width: 20rem;
       }
     }
     button{
       border: 2px solid black;
       border-radius: 4px;
       background: $light;
+      padding: 0.5rem;
+    }
+  }
+  &__aboutContainer{
+    width: 100%;
+  }
+  &__projects{
+    width: 100%;
+    padding: $mobilePad;
+    h3{
+      @include mobileHeaderSmall();
+    }
+    button{
+      border: 2px solid black;
+      border-radius: 4px;
+      background: $backWhite;
       padding: 0.5rem;
     }
   }
@@ -278,10 +303,39 @@
         @include dtHeaderSmall();
       }
     }
+    &__aboutContainer{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__about{
+      width: 100%;
+      padding: $mobilePad $tabletPad;
+      &--text{
+        width: auto;
+        max-width: 500px;
+        padding-right: 1rem;
+        @include dtParagraph();
+      }
+      &--images{
+        width: auto;
+      }
+    }
+    &__projects{
+      padding: $mobilePad $tabletPad;
+      .projectCard{
+        margin: 1rem 0;
+      }
+    }
   }
   @media (min-width: $desktopWidth) {
     &__herotext{
       margin: $tabletPad $desktopPad;
+    }
+    &__about{
+      padding: $tabletPad $desktopPad;
+    }
+    &__projects{
+      padding: $tabletPad $desktopPad;
     }
   }
 }
