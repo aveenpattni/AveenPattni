@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 export default class About extends Component {
 
@@ -24,20 +26,32 @@ export default class About extends Component {
           <h3>My Story</h3>
           <div className="about__infoBlock">
             <div className="about__story">
-              <p>
-                I am a dynamic and detail-oriented full stack web developer from Mississauga, ON,  motivated to create a positive impact in the world of digital consulting/development. Armed with various experience in information technology and digital transformation, I am talented in creating detail-focused, user-friendly solutions to solve modern problems.
-              </p>
-              <p>
-                I possess a Bachelor of Mathematics from the University of Waterloo majoring in Information Technology Management. This program combines the fields of Mathematics, Business, and Technology to bridge the gap between management and technology. After completing my undergraduate degree, I entered the working world in digital transformation as an IT Analyst. This exposed me to web development which then I pursued as a career as it allows me to utilize my problem-solving skills while working in an
-  environment where I am continuously learning and challenging myself. In addition to web development, I am also searching for opportunities as a technical business analyst. Most recently I obtained a diploma in Full Stack Web Development from BrainStation school for digital skill training.
-              </p>
-              <p>
-                I am most comfortable developing in the MERN stack (MySQL/MongoDB, Express, React, Node) however, I am spending time broadening my skill set and currently learning the Angular framework as well as developing using Python.
-              </p>
+              <Slide right>
+                <p>
+                  I am a dynamic and detail-oriented full stack web developer from Mississauga, ON,  motivated to create a positive impact in the world of digital consulting/development. Armed with various experience in information technology and digital transformation, I am talented in creating detail-focused, user-friendly solutions to solve modern problems.
+                </p>
+                <p>
+                  I am currently searching for opportunities in <strong><em>web development</em></strong> as well as <strong><em>product management/technical business analysis</em></strong>.
+                </p>
+                <p>
+                  I possess a Bachelor of Mathematics from the University of Waterloo majoring in Information Technology Management. This program combines the fields of Mathematics, Business, and Technology to bridge the gap between management and technology.
+                </p>
+                <p>
+                  After completing my undergraduate degree, I entered the working world in digital transformation as an IT Analyst. This gave me good exposure to many areas of Information Technology with focus on the technical and managerial side. This role also exposed me to web development which then I took an interest in and decided to learn more about.
+                </p>
+                <p>
+                  I enjoy application development as it allows me to utilize my problem-solving skills while working in an environment where I am continuously learning and challenging myself. Most recently I obtained a diploma in Full Stack Web Development from BrainStation school for digital skill training.
+                </p>
+                <p>
+                  I am most comfortable developing in the MERN stack (MySQL/MongoDB, Express, React, Node) however, I am spending time broadening my skill set and currently learning the Angular framework as well as developing using Python.
+                </p>
+              </Slide>
             </div>
             <div className="about__images">
-              <a href="https://uwaterloo.ca/" target="__blank"><img src="./assets/images/uwlogo.png" alt="University of Waterloo" /></a>
-              <a href="https://brainstation.io/" target="__blank"><img src="./assets/images/bslogo.png" alt="BrainStation" /></a>
+              <Fade>
+                <a href="https://uwaterloo.ca/" target="__blank"><img src="./assets/images/uwlogo.png" alt="University of Waterloo" /></a>
+                <a href="https://brainstation.io/" target="__blank"><img src="./assets/images/bslogo.png" alt="BrainStation" /></a>
+              </Fade>
             </div>
           </div>
         </section>

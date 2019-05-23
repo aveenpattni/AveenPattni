@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ProjectCard from './ProjectCard';
 import data from '../data/Projects';
+import Fade from 'react-reveal/Fade';
 
 export default class Projects extends Component {
   
@@ -20,7 +21,7 @@ export default class Projects extends Component {
         <div className="projects__cards">
           {
             data.map(item=>{
-              return <ProjectCard id={item.title} proj={item} />
+              return <Fade><ProjectCard id={item.title} proj={item} /></Fade>
             })
           }
         </div>

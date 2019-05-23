@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Roll from 'react-reveal/Roll';
 
 export default class Contact extends Component {
   render() {
@@ -13,18 +14,26 @@ export default class Contact extends Component {
 
         <section className="contact__main">
           <div className="contact__cards">
-            <div className="contact__card">
-              <a href="https://www.linkedin.com/in/aveenpattni/" target="__blank"><img src="./assets/images/linkedin.png" alt="LinkedIn" /></a>
-            </div>
-            <div className="contact__card">
-              <a href="https://github.com/aveenpattni" target="__blank"><img src="./assets/images/github.png" alt="GitHub" /></a>
-            </div>
-            <div className="contact__card">
-              <a href="mailto: aveenpattni@gmail.com"><img src="./assets/images/email.png" alt="Email" /></a>
-            </div>
-            <div className="contact__card">
-              <a href="https://drive.google.com/file/d/1N-BylEt-QbOB1REaKe7ja_XDecyeKZBv/view?usp=sharingf" target="__blank"><img src="./assets/images/resume.png" alt="Resume" /></a>
-            </div>
+            <Roll left>
+              <div className="contact__card">
+                <a href="https://www.linkedin.com/in/aveenpattni/" target="__blank"><img src="./assets/images/linkedin.png" alt="LinkedIn" /></a>
+              </div>
+            </Roll>
+            <Roll right>
+              <div className="contact__card">
+                <a href="https://github.com/aveenpattni" target="__blank"><img src="./assets/images/github.png" alt="GitHub" /></a>
+              </div>
+            </Roll>
+            <Roll left>
+              <div className="contact__card">
+                <a href="mailto: aveenpattni@gmail.com"><img src="./assets/images/email.png" alt="Email" /></a>
+              </div>
+            </Roll>
+            <Roll right>
+              <div className="contact__card">
+                <a href="https://drive.google.com/file/d/1W486OyXJCSMsUT8sWuHyzlePIwf3O9oQ/view?usp=sharing" target="__blank"><img src="./assets/images/resume.png" alt="Resume" /></a>
+              </div>
+            </Roll>
           </div>
         </section>
       </div>

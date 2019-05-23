@@ -15,7 +15,7 @@ export default class Footer extends Component {
             <a href="mailto: aveenpattni@gmail.com"><img src="./assets/images/email.png" alt="Email" /></a>
           </div>
           <div className="footer__card">
-            <a href="https://drive.google.com/file/d/1N-BylEt-QbOB1REaKe7ja_XDecyeKZBv/view?usp=sharingf" target="__blank"><img src="./assets/images/resume.png" alt="Resume" /></a>
+            <a href="https://drive.google.com/file/d/1W486OyXJCSMsUT8sWuHyzlePIwf3O9oQ/view?usp=sharing" target="__blank"><img src="./assets/images/resume.png" alt="Resume" /></a>
           </div>
         </div>
         <h3>An Aveen Pattni Production.</h3>
