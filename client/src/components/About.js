@@ -31,7 +31,7 @@ export default class About extends Component {
                   I am a dynamic and detail-oriented full stack web developer from Mississauga, ON,  motivated to create a positive impact in the world of digital consulting/development. Armed with various experience in information technology and digital transformation, I am talented in creating detail-focused, user-friendly solutions to solve modern problems.
                 </p>
                 <p>
-                  I am currently searching for opportunities in <strong><em>web development</em></strong> as well as <strong><em>product management/technical business analysis</em></strong>.
+                  I am currently working as a Software Developer II at Walmart Labs.
                 </p>
                 <p>
                   I possess a Bachelor of Mathematics from the University of Waterloo majoring in Information Technology Management. This program combines the fields of Mathematics, Business, and Technology to bridge the gap between management and technology.
